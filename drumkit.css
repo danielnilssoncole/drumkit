@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url(patience.jpg) bottom center;
+  background: #d9534f;
   background-size: cover;
 }
 body,html {
@@ -9,16 +9,16 @@ body,html {
   font-family: sans-serif;
 }
 
-.keys {
+/*.keys {
   display: flex;
   flex: 1;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 .key {
-  border: .4rem solid black;
+  border: .4rem solid #fff;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -27,8 +27,7 @@ body,html {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.1);
-  text-shadow: 0 0 .5rem black;
+  background: rgba(255,255,255,0.1);
 }
 
 kbd {
@@ -39,12 +38,12 @@ kbd {
 .playing {
   transform: scale(1.1);
   border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  box-shadow: 0 0 1rem #fff;
 }
 
 .sound {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #fff;
 }
