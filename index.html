@@ -101,7 +101,39 @@
 
       window.addEventListener('keydown', playSound);
 
-      window.console.log(keys)
+    //rideclick
+    const rideDiv = document.querySelector(`.key[data-key="81"]`);
+    const rideAudio = document.querySelector(`audio[data-key="81"]`);
+    function rideClick() {
+      if (!rideAudio) return; //stops function from running
+      rideAudio.currentTime = 0; //rewinds wav to start for repition
+      rideAudio.play();
+      rideDiv.classList.add('playing');
+    }
+    rideDiv.addEventListener('mousedown', rideClick);
+
+
+    //tinkclick
+    const tinkDiv = document.querySelector(`.key[data-key="87"]`);
+    const tinkAudio = document.querySelector(`audio[data-key="87"]`);
+    function tinkClick() {
+      if (!tinkAudio) return; //stops function from running
+      tinkAudio.currentTime = 0; //rewinds wav to start for repition
+      tinkAudio.play();
+      tinkDiv.classList.add('playing');
+    }
+    tinkDiv.addEventListener('mousedown', tinkClick);
+
+    //tomclick
+    const tomDiv = document.querySelector(`.key[data-key="69"]`);
+    const tomAudio = document.querySelector(`audio[data-key="69"]`);
+    function tomClick() {
+      if (!tomAudio) return; //stops function from running
+      tomAudio.currentTime = 0; //rewinds wav to start for repition
+      tomAudio.play();
+      tomDiv.classList.add('playing');
+    }
+    tomDiv.addEventListener('mousedown', tomClick);
 
     </script>
 
