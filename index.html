@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="row mt50 mb20">
-      <p class="text-center">drumPad</p>
+      <p class="text-center">keyBoard drumPad</p>
     </div>
     <div class="row">
       <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
@@ -112,6 +112,109 @@
 
       window.addEventListener('keydown', playSound);
 
+    // //rideclick
+    // const rideDiv = document.querySelector(`.key[data-key="81"]`);
+    // const rideAudio = document.querySelector(`audio[data-key="81"]`);
+    // function rideClick() {
+    //   if (!rideAudio) return; //stops function from running
+    //   rideAudio.currentTime = 0; //rewinds wav to start for repition
+    //   rideAudio.play();
+    //   rideDiv.classList.add('playing');
+    // }
+    // rideDiv.addEventListener('mousedown', rideClick);
+    //
+    //
+    // //tinkclick
+    // const tinkDiv = document.querySelector(`.key[data-key="87"]`);
+    // const tinkAudio = document.querySelector(`audio[data-key="87"]`);
+    // function tinkClick() {
+    //   if (!tinkAudio) return; //stops function from running
+    //   tinkAudio.currentTime = 0; //rewinds wav to start for repition
+    //   tinkAudio.play();
+    //   tinkDiv.classList.add('playing');
+    // }
+    // tinkDiv.addEventListener('mousedown', tinkClick);
+    //
+    // //tomclick
+    // const tomDiv = document.querySelector(`.key[data-key="69"]`);
+    // const tomAudio = document.querySelector(`audio[data-key="69"]`);
+    // function tomClick() {
+    //   if (!tomAudio) return; //stops function from running
+    //   tomAudio.currentTime = 0; //rewinds wav to start for repition
+    //   tomAudio.play();
+    //   tomDiv.classList.add('playing');
+    // }
+    // tomDiv.addEventListener('mousedown', tomClick);
+    //
+    // //boomclick
+    // const boomDiv = document.querySelector(`.key[data-key="65"]`);
+    // const boomAudio = document.querySelector(`audio[data-key="65"]`);
+    // function boomClick() {
+    //   if (!boomAudio) return; //stops function from running
+    //   boomAudio.currentTime = 0; //rewinds wav to start for repition
+    //   boomAudio.play();
+    //   boomDiv.classList.add('playing');
+    // }
+    // boomDiv.addEventListener('mousedown', boomClick);
+    //
+    // //snareclick
+    // const snareDiv = document.querySelector(`.key[data-key="83"]`);
+    // const snareAudio = document.querySelector(`audio[data-key="83"]`);
+    // function snareClick() {
+    //   if (!snareAudio) return; //stops function from running
+    //   snareAudio.currentTime = 0; //rewinds wav to start for repition
+    //   snareAudio.play();
+    //   snareDiv.classList.add('playing');
+    // }
+    // snareDiv.addEventListener('mousedown', snareClick);
+    //
+    // //openhatclick
+    // const openhatDiv = document.querySelector(`.key[data-key="68"]`);
+    // const openhatAudio = document.querySelector(`audio[data-key="68"]`);
+    // function openhatClick() {
+    //   if (!openhatAudio) return; //stops function from running
+    //   openhatAudio.currentTime = 0; //rewinds wav to start for repition
+    //   openhatAudio.play();
+    //   openhatDiv.classList.add('playing');
+    // }
+    // openhatDiv.addEventListener('mousedown', openhatClick);
+    //
+    // //kickclick
+    // const kickDiv = document.querySelector(`.key[data-key="90"]`);
+    // const kickAudio = document.querySelector(`audio[data-key="90"]`);
+    // function kickClick() {
+    //   if (!kickAudio) return; //stops function from running
+    //   kickAudio.currentTime = 0; //rewinds wav to start for repition
+    //   kickAudio.play();
+    //   kickDiv.classList.add('playing');
+    // }
+    // kickDiv.addEventListener('mousedown', kickClick);
+    //
+    // //clapclick
+    // const clapDiv = document.querySelector(`.key[data-key="88"]`);
+    // const clapAudio = document.querySelector(`audio[data-key="88"]`);
+    // function clapClick() {
+    //   if (!clapAudio) return; //stops function from running
+    //   clapAudio.currentTime = 0; //rewinds wav to start for repition
+    //   clapAudio.play();
+    //   clapDiv.classList.add('playing');
+    // }
+    // clapDiv.addEventListener('mousedown', clapClick);
+    //
+    // //hihatlick
+    // const hihatDiv = document.querySelector(`.key[data-key="67"]`);
+    // const hihatAudio = document.querySelector(`audio[data-key="67"]`);
+    // function hihatClick() {
+    //   if (!hihatAudio) return; //stops function from running
+    //   hihatAudio.currentTime = 0; //rewinds wav to start for repition
+    //   hihatAudio.play();
+    //   hihatDiv.classList.add('playing');
+    // }
+    // hihatDiv.addEventListener('mousedown', hihatClick);
+
+
+
+
     //rideclick
     const rideDiv = document.querySelector(`.key[data-key="81"]`);
     const rideAudio = document.querySelector(`audio[data-key="81"]`);
@@ -121,7 +224,7 @@
       rideAudio.play();
       rideDiv.classList.add('playing');
     }
-    rideDiv.addEventListener('mousedown', rideClick);
+    rideDiv.addEventListener('touchstart', rideClick);
 
 
     //tinkclick
@@ -133,7 +236,7 @@
       tinkAudio.play();
       tinkDiv.classList.add('playing');
     }
-    tinkDiv.addEventListener('mousedown', tinkClick);
+    tinkDiv.addEventListener('touchstart', tinkClick);
 
     //tomclick
     const tomDiv = document.querySelector(`.key[data-key="69"]`);
@@ -144,7 +247,7 @@
       tomAudio.play();
       tomDiv.classList.add('playing');
     }
-    tomDiv.addEventListener('mousedown', tomClick);
+    tomDiv.addEventListener('touchstart', tomClick);
 
     //boomclick
     const boomDiv = document.querySelector(`.key[data-key="65"]`);
@@ -155,7 +258,7 @@
       boomAudio.play();
       boomDiv.classList.add('playing');
     }
-    boomDiv.addEventListener('mousedown', boomClick);
+    boomDiv.addEventListener('touchstart', boomClick);
 
     //snareclick
     const snareDiv = document.querySelector(`.key[data-key="83"]`);
@@ -166,7 +269,7 @@
       snareAudio.play();
       snareDiv.classList.add('playing');
     }
-    snareDiv.addEventListener('mousedown', snareClick);
+    snareDiv.addEventListener('touchstart', snareClick);
 
     //openhatclick
     const openhatDiv = document.querySelector(`.key[data-key="68"]`);
@@ -177,7 +280,7 @@
       openhatAudio.play();
       openhatDiv.classList.add('playing');
     }
-    openhatDiv.addEventListener('mousedown', openhatClick);
+    openhatDiv.addEventListener('touchstart', openhatClick);
 
     //kickclick
     const kickDiv = document.querySelector(`.key[data-key="90"]`);
@@ -188,7 +291,7 @@
       kickAudio.play();
       kickDiv.classList.add('playing');
     }
-    kickDiv.addEventListener('mousedown', kickClick);
+    kickDiv.addEventListener('touchstart', kickClick);
 
     //clapclick
     const clapDiv = document.querySelector(`.key[data-key="88"]`);
@@ -199,7 +302,7 @@
       clapAudio.play();
       clapDiv.classList.add('playing');
     }
-    clapDiv.addEventListener('mousedown', clapClick);
+    clapDiv.addEventListener('touchstart', clapClick);
 
     //hihatlick
     const hihatDiv = document.querySelector(`.key[data-key="67"]`);
@@ -210,7 +313,7 @@
       hihatAudio.play();
       hihatDiv.classList.add('playing');
     }
-    hihatDiv.addEventListener('mousedown', hihatClick);
+    hihatDiv.addEventListener('touchstart', hihatClick);
 
     </script>
 
