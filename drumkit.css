@@ -27,7 +27,7 @@ body,html {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
 }
 
 kbd {
@@ -39,6 +39,7 @@ kbd {
   transform: scale(1.1);
   border-color: #ffc600;
   box-shadow: 0 0 1rem #fff;
+  background: rgba(255,255,255,0.5);
 }
 
 .sound {
@@ -46,4 +47,16 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #fff;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.pl6 {
+  padding-left: 6px;
 }
