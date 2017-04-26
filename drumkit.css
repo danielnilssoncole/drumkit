@@ -37,7 +37,7 @@ kbd {
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
+  border-color: #fff;
   box-shadow: 0 0 1rem #fff;
   background: rgba(255,255,255,0.5);
 }
