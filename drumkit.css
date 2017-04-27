@@ -29,6 +29,15 @@ body,html {
   color: white;
   background: rgba(255,255,255,0.05);
 }
+.key2 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+}
 
 kbd {
   display: block;
@@ -52,6 +61,12 @@ kbd {
 .mt50 {
   margin-top: 50px;
 }
+.mt30 {
+  margin-top: 30px;
+}
+.mt5 {
+  margin-top: 5px;
+}
 
 .mb20 {
   margin-bottom: 20px;
@@ -59,4 +74,39 @@ kbd {
 
 .pl6 {
   padding-left: 6px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.pr48 {
+  padding-right: 48px;
+}
+
+@media all and (max-width: 1280px) {
+    .nonpad {
+      padding-left: 5px;
+    }
+    .nonpad2 {
+      padding-left: 9px;
+    }
+    .nonpad3 {
+      padding-left: 49px;
+    }
+}
+@media all and (min-width: 1281px) {
+    .nonpad {
+      padding-left: 2px;
+    }
+    .nonpad2 {
+      padding-left: 2px;
+    }
+    .nonpad3 {
+      padding-left: 2px;
+    }
+}
+
+.hidden2 {
+  visibility: hidden;
 }

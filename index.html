@@ -10,11 +10,25 @@
     <title>drumPad</title>
   </head>
   <body>
-    <div class="row mt50 mb20">
-      <p class="text-center">keyBoard drumPad</p>
-    </div>
-    <div class="row">
+    <div class="row mt30">
       <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+        <div class="row">
+          <div class="col-xs-4 pl6 hidden2">
+            <div class="key">
+            <span class="sound">ride</span>
+            </div>
+          </div>
+          <div class="col-xs-4 pl6">
+            <div  class="key2">
+              <span class="">keyBoard drumPad</span>
+            </div>
+          </div>
+          <div class="col-xs-4 pl6 hidden2">
+            <div class="key">
+              <span class="sound">tom</span>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-xs-4 pl6">
             <div data-key="81" class="key">
@@ -77,9 +91,31 @@
         </div>
       </div>
     </div>
-
-    <div class="row mt50">
-      <p class="text-center">created by Daniel - <a href="https://github.com/danielnilssoncole/drumkit" target="_blank">GitHub</a></p>
+    <div class="row mt5">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+        <div class="row">
+          <div class="col-xs-4 pl6 hidden2">
+            <div class="key">
+            <span class="sound">ride</span>
+            </div>
+          </div>
+          <div class="col-xs-4 pl6">
+            <div  class="key2">
+              <p class="text-center">created by <a href="https://github.com/danielnilssoncole/drumkit" target="_blank">Daniel</a></p>
+              <p class="text-center">
+                <a href="https://github.com/danielnilssoncole/drumkit" target="_blank">
+                  <i class="fa fa-github fa-2x white" id="bird"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-4 pl6 hidden2">
+            <div class="key">
+              <span class="sound">tom</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <audio data-key="88" src="sounds/clap.wav"></audio>
     <audio data-key="67" src="sounds/hihat.wav"></audio>
@@ -90,6 +126,8 @@
     <audio data-key="83" src="sounds/snare.wav"></audio>
     <audio data-key="69" src="sounds/tom.wav"></audio>
     <audio data-key="87" src="sounds/tink.wav"></audio>
+
+    <script src="https://use.fontawesome.com/46d21e7003.js"></script>
 
     <script>
     function playSound(e) {
@@ -112,6 +150,15 @@
 
       window.addEventListener('keydown', playSound);
 
+      var bird = document.getElementById('bird');
+      bird.addEventListener('mouseover', function() {
+        bird.classList.add('fa-3x');
+        bird.classList.remove('fa-2x');
+      });
+      bird.addEventListener('mouseleave', function() {
+        bird.classList.add('fa-2x');
+        bird.classList.remove('fa-3x');
+      });
     </script>
 
   </body>
